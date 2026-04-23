@@ -93,8 +93,17 @@
             margin-top: 2rem;
         }
         @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
             .nav-links {
-                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.8rem;
+                margin-top: 0.8rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
             }
         }
     </style>
