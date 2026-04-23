@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircond Courses | DIY Fix Like A Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #1a3d2f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .page-title {
+            background: #2a5f45;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .filter-bar {
+            background: #f5f5f5;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .filter-btn {
+            background: white;
+            border: 1px solid #1a3d2f;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .filter-btn.active {
+            background: #1a3d2f;
+            color: white;
+        }
+        .courses {
+            padding: 2rem 0;
+        }
+        .course-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .course-card h3 {
+            color: #1a3d2f;
+            margin-bottom: 0.5rem;
+        }
+        .skill-badge {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 0.5rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                margin-top: 1rem;
+            }
+            .filter-btn {
+                margin: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="index.html">DIY Fix Like A Pro</a></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plumbing.html">Plumbing</a></li>
+                    <li><a href="electrical.html">Electrical</a></li>
+                    <li><a href="aircond.html">Aircond</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>❄️ Aircond (AC) Courses</h1>
+            <p>Keep your cool with proper AC maintenance and repairs</p>
+        </div>
+    </section>
+
+    <div class="filter-bar">
+        <div class="container">
+            <button class="filter-btn active" data-skill="all">All Levels</button>
+            <button class="filter-btn" data-skill="beginner">Beginner</button>
+            <button class="filter-btn" data-skill="intermediate">Intermediate</button>
+            <button class="filter-btn" data-skill="pro">Pro</button>
+        </div>
+    </div>
+
+    <section class="courses">
+        <div class="container" id="courses-list">
+            <div class="course-card" data-skill="beginner">
+                <h3>AC Maintenance: Cleaning Filters & Coils</h3>
+                <span class="skill-badge">Beginner</span>
+                <p>Clean or replace air filters, clean evaporator and condenser coils, check for blockages. Extend your AC life by 5+ years.</p>
+                <a href="#" class="btn">Register for Workshop →</a>
+            </div>
+
+            <div class="course-card" data-skill="intermediate">
+                <h3>Diagnosing AC Problems: Not Cold Enough, Water Leaks</h3>
+                <span class="skill-badge">Intermediate</span>
+                <p>Check refrigerant levels (safely), clean drain lines, test capacitors, identify compressor vs. fan issues.</p>
+                <a href="#" class="btn">Register for Workshop →</a>
+            </div>
+
+            <div class="course-card" data-skill="pro">
+                <h3>Advanced: Split AC Installation & Refrigerant Handling</h3>
+                <span class="skill-badge">Pro</span>
+                <p>Mount indoor/outdoor units, flare connections, vacuum pump operation, pressure testing, and basic refrigerant recharge (where legally allowed).</p>
+                <a href="#" class="btn">Register for Workshop →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DIY Fix Like A Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const courseCards = document.querySelectorAll('.course-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const skillLevel = button.getAttribute('data-skill');
+                
+                courseCards.forEach(card => {
+                    if (skillLevel === 'all' || card.getAttribute('data-skill') === skillLevel) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
